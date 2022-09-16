@@ -1,12 +1,19 @@
-import React from 'react'
+import React from "react";
+import logo from "../images/logo.png"
 
-function User({ children }) {
-    
+function User() {
+
     return (
         <div className='User'>
-            {children}
+            <div className="logo">
+                <img src={logo} alt="logo"/>
+            </div>
+            <div className='info'>
+                <p>To Do App</p>
+                <a href="#">Logout!</a>
+            </div>
         </div>
     )
 }
 
-export default User
+export default User;

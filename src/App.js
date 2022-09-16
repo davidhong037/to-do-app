@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 import Main from "./components/Main";
 import User from "./components/User";
 import AddNewToDo from "./components/AddNewToDo";
@@ -12,12 +12,12 @@ import Todos from "./components/Todos";
 function App() {
   return (
     <div className="App">
-      <Header>
+      <Sidebar>
         <User />
         <AddNewToDo />
         <Calendar />
         <Projects />
-      </Header>
+      </Sidebar>
       <Main>
         <Todos />
         <EditToDo />
