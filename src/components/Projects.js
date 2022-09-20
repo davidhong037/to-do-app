@@ -22,11 +22,16 @@ function Projects() {
           <p>Projects</p>
         </div>
         <div className="btns">
-          {showMenu && projects.length > 0 && (
-            <span className="edit" onClick={() => setEdit((edit) => !edit)}>
-              <PencilFill size="15" color={pencilColor} />
+          {
+            showMenu && projects.length > 0 && (
+              <span className="edit" onClick={() => setEdit((edit) => !edit)}>
+                <PencilFill
+                  size="15"
+                  color={pencilColor}
+                />
             </span>
-          )}
+            )
+          }
           <AddNewProject />
           <span className="arrow">
             <CaretUp size="20" />
@@ -34,9 +39,15 @@ function Projects() {
         </div>
       </div>
       <div className="items">
-        {projects.map((project) => (
-          <Project project={project} key={project.id} edit={edit} />
-        ))}
+        {
+          projects.map((project) => (
+            <Project
+              project={project}
+              key={project.id}
+              edit={edit}
+            />
+          ))
+        }
       </div>
     </div>
   );

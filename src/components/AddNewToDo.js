@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
 import { Bell, CalendarDay, Clock, Palette, X } from "react-bootstrap-icons";
-import {
-  DatePicker,
-  TimePicker,
-  MuiPickersUtilsProvider,
-} from "@material-ui/pickers";
+import { DatePicker, TimePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
 import DateFnsUtils from "@date-io/date-fns";
 
 function AddNewToDo() {
@@ -42,14 +38,20 @@ function AddNewToDo() {
                   <CalendarDay />
                   <p>Choose a day</p>
                 </div>
-                <DatePicker value={day} onChange={(day) => setDay(day)} />
+                <DatePicker
+                  value={day}
+                  onChange={(day) => setDay(day)}
+                />
               </div>
               <div className="pick-time">
                 <div className="title">
                   <Clock />
                   <p>Choose a day</p>
                 </div>
-                <TimePicker value={time} onChange={(time) => setTime(time)} />
+                <TimePicker
+                  value={time}
+                  onChange={(time) => setTime(time)}
+                />
               </div>
               <div className="pick-project">
                 <div className="title">
@@ -57,8 +59,12 @@ function AddNewToDo() {
                   <p>Choose a project</p>
                 </div>
                 <div className="projects">
-                  <div className="project active">personal</div>
-                  <div className="project">work</div>
+                  <div className="project active">
+                    personal
+                  </div>
+                  <div className="project">
+                    work
+                  </div>
                   <div className="cancel" onClick={() => setShowModal(false)}>
                     <X size="40" />
                   </div>

@@ -17,11 +17,13 @@ function Calendar() {
         </div>
       </div>
       <div className="items">
-        {calendarItems.map((item) => (
-          <div className="item" key={item}>
+        {
+          calendarItems.map((item) => (
+            <div className="item" key={item}>
             {item}
           </div>
-        ))}
+          ))
+        }
       </div>
     </div>
   );
