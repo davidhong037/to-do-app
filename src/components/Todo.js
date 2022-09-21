@@ -32,7 +32,7 @@ function Todo({ todo }) {
                     {
                         todo.checked &&
                         <span>
-                                <ArrowClockwise />
+                            <ArrowClockwise />
                         </span>
                     }
                 </div>
@@ -40,7 +40,7 @@ function Todo({ todo }) {
                     {
                         (hover || todo.checked) &&
                         <span>
-                                <Trash />
+                            <Trash />
                         </span>
                     }
                 </div>
